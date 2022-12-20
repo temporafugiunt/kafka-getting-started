@@ -39,19 +39,21 @@ bin/kafka-topics.sh --create --topic [TOPIC-NAME] --bootstrap-server [::1]:9092
 
 For this tutorial we have created the purchases topic.
 
-### Running Producer
+### Running Producer and Consumers
 
 In a new bash or WSL terminal run the following:
 
 ```sh
 cd producer
-dotnet build producer.csproj
+dotnet run $(pwd)/../bootstrap-local.properties
 ```
 
 In a new bash or WSL terminal run the following:
 
 ```sh
 cd consumer
-dotnet build consumer.csproj
+dotnet run $(pwd)/../bootstrap-local.properties
 ```
+
+Both apps also can be run in VSCode debugging via their launch.json settings.
 
