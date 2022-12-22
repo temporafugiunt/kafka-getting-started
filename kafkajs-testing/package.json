@@ -1,0 +1,15 @@
+{
+  "name": "kafkajs-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "kafka.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "James Eby <james@freebytech.com> (https://www.freebytech.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "kafkajs": "^2.2.3"
+  }
+}
